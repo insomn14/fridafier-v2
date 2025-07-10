@@ -1,4 +1,4 @@
-# Fridafier
+# Fridafier v2
 
 Automatically insert Frida gadget 
 
