@@ -64,9 +64,9 @@ def main():
         parser.print_help()
         return 1
 
-    // if args.download_gadgets:
-    //     fridadownloader.download_gadgets()
-    //     return 0
+    # if args.download_gadgets:
+    #     fridadownloader.download_gadgets()
+    #     return 0
 
     if not args.apk:
         parser.print_help()
@@ -109,21 +109,21 @@ def main():
     logger.debug("Entrypoint smali path: {0}".format(entrypoint_smali_path))
     patcher.insert_frida_loader(entrypoint_smali_path)
 
-    // if args.autoload_script:
-    //     script_file = args.autoload_script
-    //     if not os.path.isfile(script_file):
-    //         return 1
+    # if args.autoload_script:
+    #     script_file = args.autoload_script
+    #     if not os.path.isfile(script_file):
+    #         return 1
 
-    //     default_config_file = patcher.get_default_config_file()
-    //     patcher.insert_frida_lib(
-    //         temporary_path,
-    //         gadget_to_use,
-    //         config_file_path=default_config_file,
-    //         auto_load_script_path=script_file,
-    //     )
+    #     default_config_file = patcher.get_default_config_file()
+    #     patcher.insert_frida_lib(
+    #         temporary_path,
+    #         gadget_to_use,
+    #         config_file_path=default_config_file,
+    #         auto_load_script_path=script_file,
+    #     )
 
-    // else:
-    //     patcher.insert_frida_lib(temporary_path, gadget_to_use)
+    # else:
+    #     patcher.insert_frida_lib(temporary_path, gadget_to_use)
 
     apk_file_name = apk_file_path.split("/")[-1]
 
